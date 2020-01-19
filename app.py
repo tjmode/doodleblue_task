@@ -1,7 +1,7 @@
 from flask import Flask, render_template,request
 import os
+from new_coupon import newcoupon
 from database import Db
-
 app=Flask(__name__)
 db = Db()
 @app.route('/register',methods=['GET','POST'])
@@ -32,13 +32,20 @@ def register():
 			    i made auto increment ID so selection of last coupon will be use full to genrate next cupon for new user
 				'''
 				last_coupon=db.last_coupon_selecting()
+
 				'''
 				i used some simple tech to genrate different coupons to new users 
+				
+				'''
+				genrated_coupon=newcoupon(name,last_coupon)
 				'''
 				last_cupon_split=str(last_coupon[0][0])
 				intval=int(last_cupon_split[2::])
 				intval=intval+1
 				genrated_coupon=name[0:2]+str(intval)
+				'''
+
+
 			'''
 			done with coupon genration
 			this one to check weather user entered coupon is vaild or not
