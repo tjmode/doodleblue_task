@@ -7,11 +7,11 @@
 
 
 ### step-2
-- checking whether user entered thw needed data
+- checking whether user entered the needed data
 
 ------------
 ### step-3
-- checking whether user entered name is not excit in database already or not 
+- checking whether user entered name is in database already or not 
 - if not goes for other conditions otherwise a condition break
 ------------
 ### step-4
