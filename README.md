@@ -28,3 +28,19 @@
 ### step-6
 - after all condition gets ok atlast new user will be registered in databse
 
+------------
+
+## database models 
+- table-1 (details)
+	1. name (to store the user name)
+	1. age 
+	1. city
+	1. Id 
+	1. coupon (New coupon for the new user or coupon for that user)
+- table-2 (refernce)
+	1. this table is used to save the referral and referee
+	
+
+------------
+
+
